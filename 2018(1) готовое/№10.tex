@@ -1,0 +1,51 @@
+\tasknumber{2018}{10} Найдите все значения параметра $a$, при которых сумма корней уравнения\\ $x^2-\left(a^2-5a\right)x+4a^2=0$  будет отрицательной.\\
+\Solution
+\n Чтобы уравнение $x^2-\left(a^2-5a\right)x+4a^2=0$ имело корни, сумма которых была бы меньше $0$, необходимо и достаточно, чтобы\\
+1) Уравнение имело один корень, который был бы меньше $0$.\\
+ИЛИ\\
+2) Имело 2 корня, сумма которых была бы меньше $0$.
+\\
+\\\n Рассмотрим первый случай. Т.к. уравнение всегда квадратное (старший коэффициент не равен нулю), то надо рассмотреть случай, когда дискриминант равен нулю:
+\begin{center}
+$(a^2-5a)^2-4\cdot4a^2=0\Leftrightarrow a^4-10a^3+25a^2-16a^2=0 \Leftrightarrow a^4-10a^3+9a^2=0 \Leftrightarrow a^2-10a+9 = 0 \hm\Leftrightarrow a=5\pm\sqrt{25-9} \hm\Leftrightarrow a=5\pm\sqrt{16} \hm\Leftrightarrow a=5\pm4\Leftrightarrow \left[ 
+\begin{array}{l}
+a=1,\\
+a=9. 
+\end{array} \right.$
+\end{center}
+Подставим $a=1$ в изначальное уравнение:\\
+\begin{center}
+$x^2-(1^2-5\cdot1)x+4\cdot1^2=0\Leftrightarrow x^2+4x+4 = 0\Leftrightarrow (x+2)^2 = 0\Leftrightarrow x=-2.$\\
+$-2<0 \Rightarrow a=1 - \text{подходит}.$\\\end{center}
+Подставим $a=9$ в изначальное уравнение:\\
+\begin{center}
+$x^2-(9^2-5\cdot9)x+4\cdot9^2=0\Leftrightarrow x^2-36x+324 = 0\Leftrightarrow (x-18)^2=0\Leftrightarrow x=18.$\\
+$18>0\Rightarrow a=9 - \text{не подходит}.$\\\end{center}
+\n Рассмотрим второй случай.\\
+Чтобы было два корня, необходимо, чтобы дискриминант был больше нуля:
+\begin{center}
+$(a^2-5a)^2-4\cdot4a^2 > 0\Leftrightarrow a^4-10a^3+25a^2-16a^2 > 0\Leftrightarrow a^4-10a^3+9a^2 > 0\Leftrightarrow a^2-10a+9 > 0\hm\Leftrightarrow (a-1)(a-9)>0.$
+	\end{center}
+По теореме Виета: $x_1+x_2=\dfrac{a^2-5a}{1}$, где $x_1$ и  $x_2$ -- корни изначального уравнения.\\
+Тогда, необходимо и достаточно, чтобы выполнялась система: $\left\{
+\begin{array}{l}
+a^2-5a<0,\\
+(a-1)(a-9)>0.
+\end{array} \right.$\\
+Решим её методом интервалов:\\
+\begin{center}$
+\left\{ \begin{array}{l}
+a^2-5a<0,\\
+(a-1)(a-9)>0
+\end{array} \right. \Leftrightarrow
+\left\{ \begin{array}{l}
+a(a-5)<0,\\
+(a-1)(a-9)>0
+\end{array} \right. \Leftrightarrow
+\left\{ \begin{array}{l}
+a\in(0;5),\\
+a\in(-\infty;1)\cup(9;+\infty)
+\end{array} \right. \Leftrightarrow a\in\left(0;1\right).
+$\end{center}
+Объединим оба случая и получим $a\in\left(0;1 \right]$.\\
+\Answer{$a\in\left(0;1 \right]$}

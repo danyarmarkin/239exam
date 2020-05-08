@@ -1,0 +1,37 @@
+\documentclass[11 pt,russian]{article}
+\hoffset=-2cm \voffset=-2.5cm \textwidth=17cm \textheight=23cm
+
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+\usepackage{amssymb, amsfonts, amsthm, amsmath}
+\usepackage{graphicx}
+\DeclareGraphicsRule{*}{mps}{*}{}
+
+\newcounter{variant}
+\newcounter{zadacha}[variant]
+
+\newcommand{\z}{\par \addtocounter{zadacha}{1}\textbf{Вариант \Roman{variant} №\arabic{zadacha}.} }
+
+\newcommand{\gr}{^\circ}
+
+\newcommand{\Solution}{\ \\\noindent Решение.\\}
+\newcommand{\Answer}[1]{Ответ: #1.\\}
+
+\newcommand{\tasknumber}[2]{\ \\\noindent\textbf{#1 год. №#2.}}
+
+
+\newcommand*{\hm}[1]{#1\nobreak\discretionary{}%
+{\hbox{$\mathsurround=0pt #1$}}{}}
+
+
+%\linespread{0.2}
+
+%=============================================
+
+\begin{document}
+
+\input{№20.tex}
+
+
+\end{document}
+

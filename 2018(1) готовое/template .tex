@@ -1,0 +1,164 @@
+\documentclass[11 pt,russian]{book}
+\hoffset=-2cm \voffset=-2.5cm \textwidth=17cm \textheight=23cm
+
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+\usepackage{amssymb, amsfonts, amsthm, amsmath}
+\usepackage{graphicx}
+
+
+\usepackage{xcolor}
+\usepackage{hyperref}
+
+
+\usepackage{fancybox,fancyhdr}
+\fancyhead[R]{Это простой пример верхнего колонтитула}
+\fancyhead[L]{}
+\fancyhead[C]{}
+
+\fancyfoot[R]{8-4}
+\fancyfoot[L]{Страница \thepage}
+\fancyfoot[C]{}
+
+\definecolor{linkcolor}{HTML}{799B03} % цвет ссылок
+\definecolor{urlcolor}{HTML}{799B03} % цвет гиперссылок
+ 
+\hypersetup{pdfstartview=FitH,  linkcolor=linkcolor,urlcolor=urlcolor, colorlinks=true}
+
+\DeclareGraphicsRule{*}{mps}{*}{}
+
+\newcounter{variant}
+\newcounter{zadacha}[variant]
+
+\newcommand{\z}{\par \addtocounter{zadacha}{1}\textbf{Вариант \Roman{variant} №\arabic{zadacha}.} }
+
+\newcommand{\gr}{^\circ}
+
+\newcommand{\Solution}{\ \\\noindent Решение.\\}
+\newcommand{\Answer}[1]{Ответ: #1.\\}
+
+\newcommand{\tasknumber}[2]{\ \\\noindent\textbf{#1 год. №#2.}}
+
+
+\newcommand*{\hm}[1]{#1\nobreak\discretionary{}%
+{\hbox{$\mathsurround=0pt #1$}}{}}
+%для 10 задачи
+\newcounter{num}
+
+\newcommand{\n}{\par\addtocounter{num}{1}%
+\textbf{\arabic{num}.}\ }
+
+%\linespread{0.2}
+
+\pagestyle{fancy}
+\newcommand{\HRule}[1]{\rule{\linewidth}{#1}} 	% Horizontal rule
+
+\makeatletter							% Title
+\def\printtitle{%						
+    {\centering \@title\par}}
+\makeatother									
+
+\makeatletter							% Author
+\def\printauthor{%					
+    {\centering \large \@author}}				
+\makeatother							
+
+% --------------------------------------------------------------------
+% Metadata (Change this)
+% --------------------------------------------------------------------
+\title{	\normalsize \textsc{Title page subtitle} 	% Subtitle
+		 	\\[2.0cm]								% 2cm spacing
+			\HRule{0.5pt} \\						% Upper rule
+			\LARGE \textbf{\uppercase{This is a rather long but nice looking title example}}	% Title
+			\HRule{2pt} \\ [0.5cm]		% Lower rule + 0.5cm spacing
+			\normalsize \today			% Todays date
+		}
+
+\author{
+		John F. Doe\\	
+		Imaginary University of Examples\\	
+		Made up department of Randomness\\
+        \texttt{your@email.com} \\
+}
+
+%=============================================
+
+%\title{Варианты вступительных работ в ПФМЛ239}
+%\author{8-4 класс}
+%\date{2020г.}
+
+%\pagestyle{empty}
+
+\begin{document}
+
+%\thispagestyle{empty}
+%\maketitle
+%\newpage
+
+
+\thispagestyle{empty}		% Remove page numbering on this page
+
+\printtitle					% Print the title data as defined above
+  	\vfill
+\printauthor				% Print the author data as defined above
+\newpage
+
+
+%\tableofcontents
+\newpage
+
+\section{2015 год}
+\subsection{I вариант}
+\subsection{II вариант}
+
+\section{2016 год}
+\subsection{I вариант}
+\subsection{II вариант}
+
+\section{2017 год}
+\subsection{I вариант}
+\subsection{II вариант}
+
+
+\section{2018 год}
+\subsection{I вариант}
+\input{№1.tex}
+\hrule
+\input{№2.tex}
+\hrule
+\input{№3.tex}
+\hrule
+\input{№4.tex}
+\hrule
+\input{№5.tex}
+\hrule
+\input{№6.tex}
+\hrule
+\input{№7.tex}
+\hrule
+\input{№8.tex}
+\hrule
+\input{№9.tex}
+\hrule
+\input{№10.tex}
+\hrule
+\input{№11.tex}
+\hrule
+\input{№12.tex}
+\hrule
+\input{№14.tex}
+\hrule
+\input{№15.tex}
+\hrule
+\input{№18.tex}
+\hrule
+\input{№19.tex}
+\hrule
+\input{№20.tex}
+
+\subsection{II вариант}
+\section{2019 год}
+\subsection{I вариант}
+\subsection{II вариант}
+
+\end{document}

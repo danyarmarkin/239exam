@@ -1,0 +1,62 @@
+\documentclass[11 pt,russian]{article}
+\hoffset=-2cm \voffset=-2.5cm \textwidth=17cm \textheight=23cm
+
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+\usepackage{amssymb, amsfonts, amsthm, amsmath}
+\usepackage{graphicx}
+\DeclareGraphicsRule{*}{mps}{*}{}
+
+\newcounter{variant}
+\newcounter{zadacha}[variant]
+
+\newcommand{\z}{\par \addtocounter{zadacha}{1}\textbf{Вариант \Roman{variant} №\arabic{zadacha}.} }
+
+\newcommand{\gr}{^\circ}
+
+\newcommand{\Solution}{\ \\\noindent Решение.\\}
+\newcommand{\Answer}[1]{Ответ: #1.\\}
+
+\newcommand{\tasknumber}[2]{\ \\\noindent\textbf{#1 год. №#2.}}
+
+
+\newcommand*{\hm}[1]{#1\nobreak\discretionary{}%
+{\hbox{$\mathsurround=0pt #1$}}{}}
+%для 10 задачи
+\newcounter{num}
+
+\newcommand{\n}{\par\addtocounter{num}{1}%
+\textbf{\arabic{num}.}\ }
+
+%\linespread{0.2}
+
+%=============================================
+
+\begin{document}
+
+\input{№1.tex}
+\hrule
+\input{№2.tex}
+\hrule
+\input{№3.tex}
+\hrule
+\input{№4.tex}
+\hrule
+\input{№5.tex}
+\hrule
+\input{№6.tex}
+\hrule
+\input{№7.tex}
+\hrule
+\input{№8.tex}
+\hrule
+\input{№9.tex}
+\hrule
+\input{№10.tex}
+\hrule
+\input{№12.tex}
+\hrule
+\input{№14.tex}
+
+
+\end{document}
